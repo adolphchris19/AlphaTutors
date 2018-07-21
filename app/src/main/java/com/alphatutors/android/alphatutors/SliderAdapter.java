@@ -22,22 +22,22 @@ public class SliderAdapter extends PagerAdapter {
     //Image Array
     public int[] onboardImages = {
             R.drawable.tutor2,
-            R.drawable.tutor2,
+            R.drawable.tutor3,
             R.drawable.tutor2
     };
 
     //Image Array
     public String[] onboardHeader = {
-            "me",
-            "you",
-            "us"
+            "Become A Tutor",
+            "Hire A Tutor",
+            "Get Started"
     };
 
     //Image Array
     public String[] onboardText = {
-            "me",
-            "you",
-            "us"
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry"
     };
 
 
