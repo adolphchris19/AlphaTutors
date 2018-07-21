@@ -1,10 +1,10 @@
-package com.alphatutors.android.alphatutors;
+package Data;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import Data.AlphaTutorsContract;
+import Data.AlphaTutorsContract.FeedEntry;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
     // If you change the database schema, you must increment the database version.
@@ -14,8 +14,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String SQL_CREATE_ENTRIES =
             "CREATE TABLE " + AlphaTutorsContract.FeedEntry.TABLE_NAME + " (" +
                     AlphaTutorsContract.FeedEntry._ID + " INTEGER PRIMARY KEY," +
-                    AlphaTutorsContract.FeedEntry.COLUMN_NAME_TITLE + " TEXT," +
-                    AlphaTutorsContract.FeedEntry.COLUMN_NAME_SUBTITLE + " TEXT)";
+                    FeedEntry.COLUMN_NAME_LOGIN + " TEXT," +
+                    FeedEntry.COLUMN_NAME_PASSWORD + " TEXT," +
+                    FeedEntry.COLUMN_NAME_USERTYPE + " TEXT," +
+                    FeedEntry.COLUMN_NAME_FULLNAME + " TEXT," +
+                    FeedEntry.COLUMN_NAME_ADDRESS + " TEXT," +
+                    FeedEntry.COLUMN_NAME_CITY + " TEXT," +
+                    FeedEntry.COLUMN_NAME_STATE + " TEXT," +
+                    FeedEntry.COLUMN_NAME_GENDER + " TEXT," +
+                    FeedEntry.COLUMN_NAME_DOB + " DATE," +
+                    FeedEntry.COLUMN_NAME_MOBILE + " INT)";
 
     private static final String SQL_DELETE_ENTRIES =
             "DROP TABLE IF EXISTS " + AlphaTutorsContract.FeedEntry.TABLE_NAME;
