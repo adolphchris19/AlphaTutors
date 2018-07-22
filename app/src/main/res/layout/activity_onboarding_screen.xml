@@ -3,9 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ONBoardingScreen">
-    <!--android:background="@drawable/background_image"-->
-
+    android:background="@drawable/main_rect"
+    tools:context=".OnBoardingScreen">
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewPager"
@@ -28,57 +27,44 @@
 
     <Button
         android:id="@+id/previousButton"
-        android:text="@string/previousButton"
-        android:textColor="@color/colorWhite"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
         android:visibility="gone"
-        android:layout_alignParentBottom="true"
-        android:textStyle="bold"
-        android:textSize="15sp"
-        android:padding="15dp"
-        android:background="@drawable/button"
-
-        />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="560dp"
+        android:background="@drawable/previous" />
 
     <Button
         android:id="@+id/skipButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/button"
-        android:padding="15dp"
-        android:text="Skip"
-        android:textColor="@color/colorWhite"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        android:visibility="visible" />
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="560dp"
+        android:background="@drawable/prev_skip" />
 
     <Button
         android:id="@+id/nextButton"
-        android:text="@string/nextButton"
-        android:textColor="@color/colorWhite"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        android:padding="15dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:background="@drawable/button"/>
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="275dp"
+        android:layout_marginTop="560dp"
+        android:background="@drawable/next" />
 
     <Button
         android:id="@+id/loginButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/button"
-        android:padding="15dp"
-        android:text="Sign In"
-        android:textColor="@color/colorWhite"
-        android:textSize="15sp"
-        android:textStyle="bold"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="275dp"
+        android:layout_marginTop="560dp"
+        android:background="@drawable/sign_in"
         android:visibility="gone" />
 
 

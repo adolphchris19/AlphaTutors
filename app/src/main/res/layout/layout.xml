@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><!-- layout/*.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF">
+
+    <!-- layout/*.xml -->
+    <EditText
+        android:id="@+id/login_id_fi"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="8dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="202dp"
+        android:background="@drawable/rectangle"
+        android:inputType="textPassword" />
+</RelativeLayout>
+

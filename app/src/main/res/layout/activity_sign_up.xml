@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tutor2"
+    tools:context=".SignUpActivity">
+
+    <View
+        android:id="@+id/learny"
+        android:layout_width="87dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="137dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/learny" />
+
+    <TextView
+        android:id="@+id/sign_up_as"
+        android:layout_width="158dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-17dp"
+        android:layout_marginTop="85dp"
+        android:gravity="center_horizontal"
+        android:text="@string/sign_up_as"
+        android:textAppearance="@style/sign_up_as" />
+
+    <RadioGroup
+        android:id="@+id/usertype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/learner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="115dp"
+            android:text="Learner" />
+
+        <RadioButton
+            android:id="@+id/tutor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="115dp"
+            android:text="Tutor" />
+    </RadioGroup>
+
+
+    <EditText
+        android:id="@+id/fullname"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="152dp"
+        android:background="@drawable/rectangle"
+        android:hint="Full Name"
+        android:inputType="text"
+        android:paddingLeft="8dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="198dp"
+        android:background="@drawable/rectangle"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="8dp" />
+
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="244dp"
+        android:background="@drawable/rectangle"
+        android:hint="Mobile Number"
+        android:inputType="phone"
+        android:paddingLeft="8dp" />
+
+    <EditText
+        android:id="@+id/password_1"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="289dp"
+        android:background="@drawable/rectangle"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="8dp" />
+
+    <EditText
+        android:id="@+id/password_2"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="289dp"
+        android:background="@drawable/rectangle"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:paddingStart="8dp" />
+
+    <Spinner
+        android:id="@+id/gender"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="335dp"
+        android:background="@drawable/rectangle" />
+
+    <View
+        android:id="@+id/polygon"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="149dp"
+        android:layout_marginTop="344dp"
+        android:background="@drawable/polygon" />
+
+    <EditText
+        android:id="@+id/datebirth"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="188dp"
+        android:layout_marginTop="335dp"
+        android:background="@drawable/rectangle"
+        android:hint="dd/mm/yy"
+        android:inputType="date"
+        android:paddingLeft="8dp" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="380dp"
+        android:background="@drawable/rectangle"
+        android:hint="Address"
+        android:inputType="text"
+        android:paddingLeft="8dp" />
+
+    <Spinner
+        android:id="@+id/city"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="426dp"
+        android:background="@drawable/rectangle" />
+
+    <View
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="151dp"
+        android:layout_marginTop="435dp"
+        android:background="@drawable/polygon" />
+
+    <Spinner
+        android:id="@+id/state"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="425dp"
+        android:background="@drawable/rectangle" />
+
+    <View
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="309dp"
+        android:layout_marginTop="434dp"
+        android:background="@drawable/polygon" />
+
+    <CheckBox
+        android:id="@+id/switches_ch"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="459dp"
+        android:background="@drawable/bounds" />
+
+    <TextView
+        android:id="@+id/by_signing_"
+        android:layout_width="266dp"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="464dp"
+        android:gravity="center_horizontal"
+        android:text="@string/by_signing_"
+        android:textAppearance="@style/by_signing_" />
+
+    <Button
+        android:id="@+id/sign_up_but"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="504dp"
+
+        android:background="@drawable/sign_up_rec"
+        android:elevation="4dp"
+        android:text="@string/sign_up"
+        android:textAppearance="@style/sign_up"
+        android:textStyle="" />
+
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gender">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="city">
+        <item>Select City</item>
+        <item>Ikoyi</item>
+        <item>Ikeja</item>
+    </string-array>
+
+    <string-array name="state">
+        <item>Select State</item>
+        <item>Lagos</item>
+        <item>Abuja</item>
+    </string-array>
+</resources>

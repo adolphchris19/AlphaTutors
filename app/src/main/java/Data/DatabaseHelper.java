@@ -13,7 +13,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     private static final String SQL_CREATE_ENTRIES =
             "CREATE TABLE " + AlphaTutorsContract.FeedEntry.TABLE_NAME + " (" +
-                    AlphaTutorsContract.FeedEntry._ID + " INTEGER PRIMARY KEY," +
+                    AlphaTutorsContract.FeedEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
                     FeedEntry.COLUMN_NAME_LOGIN + " TEXT," +
                     FeedEntry.COLUMN_NAME_PASSWORD + " TEXT," +
                     FeedEntry.COLUMN_NAME_USERTYPE + " TEXT," +
@@ -46,5 +46,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public void onDowngrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         onUpgrade(db, oldVersion, newVersion);
     }
+
 }
 

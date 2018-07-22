@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-public class ONBoardingScreen extends AppCompatActivity {
+public class OnBoardingScreen extends AppCompatActivity {
 
 
     private ViewPager myViewPager;
@@ -44,13 +44,11 @@ public class ONBoardingScreen extends AppCompatActivity {
                 skip.setVisibility(View.VISIBLE);
                 nextButton.setVisibility(View.VISIBLE);
                 login.setVisibility(View.GONE);
-                //previousButton.setText("Skip");
 
-                nextButton.setText("next");
                 skip.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent(ONBoardingScreen.this, LoginActivity.class);
+                        Intent intent = new Intent(OnBoardingScreen.this, LoginActivity.class);
                         startActivity(intent);
                     }
                 });
@@ -61,15 +59,13 @@ public class ONBoardingScreen extends AppCompatActivity {
                 skip.setVisibility(View.GONE);
                 previousButton.setVisibility(View.VISIBLE);
                 nextButton.setEnabled(false);
-                //nextButton.setText("Sign In");
                 nextButton.setVisibility(View.GONE);
                 login.setVisibility(View.VISIBLE);
-                previousButton.setText("Previous");
 
                 login.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent(ONBoardingScreen.this, LoginActivity.class);
+                        Intent intent = new Intent(OnBoardingScreen.this, LoginActivity.class);
                         startActivity(intent);
                     }
                 });
@@ -80,8 +76,6 @@ public class ONBoardingScreen extends AppCompatActivity {
                 skip.setVisibility(View.GONE);
                 login.setVisibility(View.GONE);
                 nextButton.setVisibility(View.VISIBLE);
-                nextButton.setText("Next");
-                previousButton.setText("Previous");
 
             }
 
@@ -133,6 +127,14 @@ public class ONBoardingScreen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 myViewPager.setCurrentItem(currentPage - 1);
+            }
+        });
+
+        skip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(OnBoardingScreen.this, LoginActivity.class);
+                startActivity(intent);
             }
         });
     }

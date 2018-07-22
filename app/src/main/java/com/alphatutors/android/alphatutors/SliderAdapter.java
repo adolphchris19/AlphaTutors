@@ -2,7 +2,6 @@ package com.alphatutors.android.alphatutors;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
-import android.support.constraint.ConstraintLayout;
 import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,24 +20,25 @@ public class SliderAdapter extends PagerAdapter {
 
     //Image Array
     public int[] onboardImages = {
-            R.drawable.tutor2,
-            R.drawable.tutor3,
-            R.drawable.tutor2
+            R.drawable.learning,
+            R.drawable.tutoring,
+            R.drawable.get_start
     };
 
     //Image Array
     public String[] onboardHeader = {
-            "Become A Tutor",
-            "Hire A Tutor",
-            "Get Started"
+            "Learning",
+            "Tutoring",
+            "Join the community"
     };
 
     //Image Array
     public String[] onboardText = {
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry"
-    };
+            "Unleash the genius in you by learning from top professional tutors." + "\n\n\n" +
+                    " Book one-on-one lessons with verified tutors close to you",
+            "Teach what you love to the brightest minds effectively with supervised learning",
+            "Learn with the brightest minds in a learning community" + "\n\n" +
+                    " Ask question, take quiz and challenges to test yourself"};
 
 
     @Override
@@ -73,6 +73,6 @@ public class SliderAdapter extends PagerAdapter {
 
     @Override
     public void destroyItem(@NonNull ViewGroup container, int position, @NonNull Object object) {
-        container.removeView((ConstraintLayout)object);
+        container.removeView((RelativeLayout) object);
     }
 }

@@ -23,4 +23,24 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="sign_in">Sign in</string>
+    <!-- strings.xml -->
+    <string name="forgot_pass">Forgot Password?</string>
+    <!-- strings.xml -->
+    <string name="or">OR</string>
+    <!-- strings.xml -->
+    <string name="sign_up">Sign Up</string>
+    <!-- strings.xml -->
+    <string name="sign_up_as">Sign up as</string>
+    <!-- strings.xml -->
+    <string name="by_signing_">By signing up, you agree to our terms and policies</string>
+
+    <!-- strings.xml -->
+    <string name="unleash_the">Unleash the genius in you by learning from top professional tutors.
+
+        Book one-on-one lessons with\n verified tutors</string>
+    <!-- strings.xml -->
+    <string name="book_one_on">Book one-on-one lessons with\n verified tutors</string>
+
+    <string name="learning">Learning</string>
 </resources>
